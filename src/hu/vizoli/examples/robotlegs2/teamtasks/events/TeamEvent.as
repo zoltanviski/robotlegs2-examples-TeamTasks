@@ -9,8 +9,8 @@ package hu.vizoli.examples.robotlegs2.teamtasks.events
 	 */
 	public class TeamEvent extends Event
 	{
-		public static const GET_TEAM:String = "getTeam";
-		public static const TEAM_LOADED:String = "teamLoaded";
+		public static const GET_TEAM:String 	= "getTeam";
+		public static const TEAM_LOADED:String 	= "teamLoaded";
 		
 		//--------------------------------------------------------------------------
 		//
@@ -22,8 +22,6 @@ package hu.vizoli.examples.robotlegs2.teamtasks.events
 		 * TeamEvent
 		 * 
 		 * @param 	type
-		 * @param 	bubbles
-		 * @param 	cancelable
 		 */
 		public function TeamEvent( type:String )
 		{
@@ -37,9 +35,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.events
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * clone
+		 * @inheritDoc
 		 */
-		override public function clone():Event
+		override public function clone( ):Event
 		{
 			return new TeamEvent( type );
 		}

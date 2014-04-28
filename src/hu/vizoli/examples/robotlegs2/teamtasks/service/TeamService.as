@@ -32,7 +32,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * Team tagjainak lekerdezese
+		 * Load the members
 		 */
 		public function loadMembers():void
 		{
@@ -48,13 +48,13 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * Team tagjainak lekerdezese - Complete
+		 * LoadMembers complete handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function loadMembers_CompleteHandler( event:Event ):void
+		private function loadMembers_CompleteHandler( e:Event ):void
 		{
-			var members:Object 		= JSON.parse( event.target.data );
+			var members:Object 		= JSON.parse( e.target.data );
 			
 			this.teamModel.members 	= this.parser.parseMembersResult( members );
 		}

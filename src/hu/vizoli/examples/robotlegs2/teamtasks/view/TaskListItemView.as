@@ -10,7 +10,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 	import hu.vizoli.examples.robotlegs2.teamtasks.model.vo.TaskVO;
 	
 	/**
-	 * Taskok listaja
+	 * TaskListItemView
 	 * 
 	 * @author vizoli
 	 */
@@ -32,7 +32,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * TaskListView
+		 * TaskListItemView
 		 */
 		public function TaskListItemView() 
 		{
@@ -99,7 +99,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * setFields
+		 * Set fields
+		 * 
+		 * @param	task
 		 */
 		public function setFields( task:TaskVO ):void
 		{

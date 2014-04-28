@@ -22,12 +22,10 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model.events
 		 * TaskEvent
 		 * 
 		 * @param 	type
-		 * @param 	bubbles
-		 * @param 	cancelable
 		 */
 		public function TaskModelEvent( type:String )
 		{
-			super(type);
+			super( type );
 		}
 		
 		//--------------------------------------------------------------------------
@@ -37,9 +35,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model.events
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * clone
+		 * @inheritDOc
 		 */
-		override public function clone():Event
+		override public function clone( ):Event
 		{
 			return new TaskModelEvent( type );
 		}

@@ -1,16 +1,13 @@
 package 
 {
-	import flash.display.Sprite;
 	import flash.display.StageAlign;
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
+	import hu.vizoli.examples.robotlegs2.teamtasks.base.BaseView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.config.FlashTeamTasksConfig;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.AppletBackgroundView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.LogoView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.NewTaskView;
-	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemMediator;
-	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemView;
-	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListView;
 	import robotlegs.bender.bundles.mvcs.MVCSBundle;
 	import robotlegs.bender.extensions.contextView.ContextView;
@@ -22,7 +19,7 @@ package
 	 * 
 	 * @author vizoli ( Name: Zoltan Viski, Site: vizoli.hu, Github: https://github.com/zoltanviski )
 	 */
-	public class Main extends Sprite 
+	public class Main extends BaseView 
 	{
 		private var _context:IContext;
 		private var _appletBackgroundView:AppletBackgroundView;
@@ -51,11 +48,14 @@ package
 		
 		//--------------------------------------------------------------------------
 		//
-		//  Private methods
+		//  Overriden methods
 		//
 		//--------------------------------------------------------------------------
 		
-		private function createChildren():void
+		/**
+		 * @inheritDoc
+		 */
+		override public function createChildren():void
 		{
 			this._appletBackgroundView 			= new AppletBackgroundView();
 			this._appletBackgroundView.width 	= this.stage.stageWidth;
@@ -85,9 +85,11 @@ package
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * init
+		 * Init
+		 * 
+		 * @param	e
 		 */
-		private function init( event:Event = null ):void 
+		private function init( e:Event = null ):void 
 		{
 			this.removeEventListener( Event.ADDED_TO_STAGE, this.init );
 			

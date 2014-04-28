@@ -17,7 +17,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service.parser
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * parseMembersResult
+		 * Parse the members result
+		 * 
+		 * @param	membersObject
 		 */
 		public function parseMembersResult( membersObject:Object ):Vector.<MemberVO>
 		{

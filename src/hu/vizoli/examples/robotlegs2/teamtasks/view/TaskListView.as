@@ -51,7 +51,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * createItems
+		 * Create task items
+		 * 
+		 * @param	tasks
 		 */
 		public function createTaskItems( tasks:Vector.<TaskVO> ):void
 		{
@@ -75,7 +77,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * clearItemsHolder
+		 * Clear items holder
 		 */
 		private function clearItemsHolder():void
 		{

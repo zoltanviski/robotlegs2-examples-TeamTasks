@@ -26,7 +26,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 *  initialize
+		 * @inheritDoc
 		 */
 		override public function initialize():void
 		{
@@ -44,23 +44,23 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 *  teamEvent_teamLoadedHandler
+		 *  TeamEvent teamLoaded handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function teamEvent_teamLoadedHandler( event:TeamEvent ):void
+		private function teamEvent_teamLoadedHandler( e:TeamEvent ):void
 		{
 			this.view.setMembers( this.teamModel.members );
 		}
 		
 		/**
-		 *  TaskEvent_AddHandler
+		 *  TaskEvent add handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function taskEvent_AddHandler( event:TaskEvent ):void
+		private function taskEvent_AddHandler( e:TaskEvent ):void
 		{
-			this.dispatch( event );
+			this.dispatch( e );
 		}
 		
 	}

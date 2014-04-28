@@ -20,7 +20,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 *  initialize
+		 * @inheritDoc
 		 */
 		override public function initialize():void
 		{
@@ -34,13 +34,13 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * taskEvent_RemoveHandler
+		 * TaskEvent remove handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function taskEvent_RemoveHandler( event:TaskEvent ):void
+		private function taskEvent_RemoveHandler( e:TaskEvent ):void
 		{
-			this.dispatch( event );
+			this.dispatch( e );
 		}
 	}
 

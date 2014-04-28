@@ -36,7 +36,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * Task listazasa
+		 * List tasks
 		 */
 		public function getTasksList():void
 		{
@@ -53,7 +53,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		}
 		
 		/**
-		 * Task hozzaadasa
+		 * Ass task
+		 * 
+		 * @param	task
 		 */
 		public function addTask( task:TaskVO ):void
 		{
@@ -74,7 +76,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		}
 		
 		/**
-		 * Task torlese
+		 * Remove task
+		 * 
+		 * @param	task
 		 */
 		public function removeTask( task:TaskVO ):void
 		{
@@ -99,37 +103,37 @@ package hu.vizoli.examples.robotlegs2.teamtasks.service
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * addTask_CompleteHandler
+		 * AddTask complete handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function addTask_CompleteHandler( event:Event ):void
+		private function addTask_CompleteHandler( e:Event ):void
 		{
-			var tasks:Object 		= JSON.parse( event.target.data );
+			var tasks:Object 		= JSON.parse( e.target.data );
 			
 			this.taskModel.tasks 	= this.parser.parseListTaskResult( tasks );
 		}
 		
 		/**
-		 * removeTask_CompleteHandler
+		 * RemoveTask complete handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function removeTask_CompleteHandler( event:Event ):void
+		private function removeTask_CompleteHandler( e:Event ):void
 		{
-			var tasks:Object 		= JSON.parse( event.target.data );
+			var tasks:Object 		= JSON.parse( e.target.data );
 			
 			this.taskModel.tasks 	= this.parser.parseListTaskResult( tasks );
 		}
 		
 		/**
-		 * getTasksList_CompleteHandler
+		 * GetTaskList complete handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function getTasksList_CompleteHandler( event:Event ):void
+		private function getTasksList_CompleteHandler( e:Event ):void
 		{
-			var tasks:Object 		= JSON.parse( event.target.data );
+			var tasks:Object 		= JSON.parse( e.target.data );
 			
 			this.taskModel.tasks 	= this.parser.parseListTaskResult( tasks );
 		}

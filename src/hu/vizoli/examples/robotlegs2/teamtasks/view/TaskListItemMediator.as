@@ -6,7 +6,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 	import robotlegs.bender.bundles.mvcs.Mediator;
 	
 	/**
-	 * TaskListsMediator
+	 * TaskListItemMediator
 	 * 
 	 * @author vizoli
 	 */
@@ -25,7 +25,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * initialize
+		 * @inheritDoc
 		 */
 		override public function initialize():void
 		{

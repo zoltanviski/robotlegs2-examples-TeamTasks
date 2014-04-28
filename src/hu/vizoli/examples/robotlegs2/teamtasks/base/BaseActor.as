@@ -19,10 +19,15 @@ package hu.vizoli.examples.robotlegs2.teamtasks.base
 		//
 		//--------------------------------------------------------------------------
 		
-		protected function dispatch( event:Event ):void
+		/**
+		 * Dispatch event
+		 * 
+		 * @param	e
+		 */
+		protected function dispatch( e:Event ):void
 		{
-			if ( this.eventDispatcher.hasEventListener( event.type ) )
-				this.eventDispatcher.dispatchEvent( event );
+			if ( this.eventDispatcher.hasEventListener( e.type ) )
+				this.eventDispatcher.dispatchEvent( e );
 		}
 	}
 }

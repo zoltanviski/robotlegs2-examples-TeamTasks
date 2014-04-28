@@ -4,6 +4,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.config
 	import hu.vizoli.examples.robotlegs2.teamtasks.controller.GetTasksListCommand;
 	import hu.vizoli.examples.robotlegs2.teamtasks.controller.LoadTeamCommand;
 	import hu.vizoli.examples.robotlegs2.teamtasks.controller.RemoveTaskCommand;
+	import hu.vizoli.examples.robotlegs2.teamtasks.events.TaskEvent;
 	import hu.vizoli.examples.robotlegs2.teamtasks.events.TeamEvent;
 	import hu.vizoli.examples.robotlegs2.teamtasks.model.TasksModel;
 	import hu.vizoli.examples.robotlegs2.teamtasks.model.TeamModel;
@@ -13,7 +14,6 @@ package hu.vizoli.examples.robotlegs2.teamtasks.config
 	import hu.vizoli.examples.robotlegs2.teamtasks.service.parser.TeamServiceParser;
 	import hu.vizoli.examples.robotlegs2.teamtasks.service.TaskService;
 	import hu.vizoli.examples.robotlegs2.teamtasks.service.TeamService;
-	import hu.vizoli.examples.robotlegs2.teamtasks.events.TaskEvent;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.AppletBackgroundMediator;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.AppletBackgroundView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.DeleteTaskIconMediator;
@@ -22,8 +22,6 @@ package hu.vizoli.examples.robotlegs2.teamtasks.config
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.LogoView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.NewTaskMediator;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.NewTaskView;
-	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemMediator;
-	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemMediator;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListItemView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.TaskListMediator;
@@ -56,7 +54,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.config
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * configure
+		 * Configure
 		 */
 		public function configure():void
 		{

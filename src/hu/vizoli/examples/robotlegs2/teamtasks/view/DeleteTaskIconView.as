@@ -56,11 +56,11 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * deleteTaskIcon_ClickHandler
+		 * Delete task icon click handler
 		 * 
-		 * @param	event
+		 * @param	e
 		 */
-		private function deleteTaskIcon_ClickHandler( event:MouseEvent ):void
+		private function deleteTaskIcon_ClickHandler( e:MouseEvent ):void
 		{
 			var taskVO:TaskVO 	= new TaskVO();
 			taskVO.id 			= this._task.id;

@@ -5,7 +5,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 	import hu.vizoli.examples.robotlegs2.teamtasks.model.vo.TaskVO;
 	
 	/**
-	 * Taskok Modelje
+	 * Model of tasks
 	 * 
 	 * @author vizoli
 	 */
@@ -28,7 +28,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		}
 		
 		/**
-		 * Taskok Modelje
+		 * Returns the tasks
 		 * 
 		 * @param	 value
 		 */

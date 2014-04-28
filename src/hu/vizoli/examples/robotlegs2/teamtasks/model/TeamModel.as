@@ -19,7 +19,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * TeamMembersModel
+		 * TeamModel
 		 */
 		public function TeamModel() 
 		{
@@ -41,7 +41,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		}
 		
 		/**
-		 * members
+		 * Returns the members
 		 * 
 		 * @param	 value
 		 */

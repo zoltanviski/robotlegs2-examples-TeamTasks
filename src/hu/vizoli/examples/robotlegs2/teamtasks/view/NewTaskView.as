@@ -18,7 +18,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 	import nid.ui.controls.datePicker.iconSprite;
 	
 	/**
-	 * Uj task felvetele
+	 * NewTaskView
 	 * 
 	 * @author vizoli
 	 */
@@ -42,7 +42,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * Uj task felvetele
+		 * NewTaskView
 		 */
 		public function NewTaskView() 
 		{	
@@ -119,9 +119,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * createChildren
+		 * Set members
 		 * 
-		 * @param	names
+		 * @param	members
 		 */
 		public function setMembers( members:Vector.<MemberVO> ):void
 		{
@@ -138,7 +138,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * isValidNewTask
+		 * Returns valid new task or not
 		 */
 		private function isValidNewTask():Boolean
 		{
@@ -165,11 +165,11 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * button_click
+		 * Button click handler
 		 * 
 		 * @param	event
 		 */
-		private function button_ClickHandler( event:MouseEvent ):void
+		private function button_ClickHandler( e:MouseEvent ):void
 		{
 			if ( this.isValidNewTask() )
 			{

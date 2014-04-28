@@ -25,7 +25,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 *  initialize
+		 * @inheritDoc
 		 */
 		override public function initialize():void
 		{
@@ -41,7 +41,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.view
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * taskModelEvent_UpdateHandler
+		 * TaskModelEvent update handler
 		 * 
 		 * @param	event
 		 */

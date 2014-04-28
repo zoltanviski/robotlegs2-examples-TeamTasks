@@ -9,8 +9,8 @@ package hu.vizoli.examples.robotlegs2.teamtasks.event
 	 */
 	public class TeamEvent extends Event
 	{
-		public static const GET_TEAM:String = "getTeam";
-		public static const TEAM_LOADED:String = "teamLoaded";
+		public static const GET_TEAM:String 	= "getTeam";
+		public static const TEAM_LOADED:String 	= "teamLoaded";
 		
 		//--------------------------------------------------------------------------
 		//
@@ -25,9 +25,9 @@ package hu.vizoli.examples.robotlegs2.teamtasks.event
 		 * @param 	bubbles
 		 * @param 	cancelable
 		 */
-		public function TeamEvent(type:String, bubbles:Boolean=false, cancelable:Boolean=false)
+		public function TeamEvent( type:String, bubbles:Boolean = false, cancelable:Boolean = false )
 		{
-			super(type, bubbles, cancelable);
+			super( type, bubbles, cancelable );
 		}
 		
 		//--------------------------------------------------------------------------
@@ -37,11 +37,11 @@ package hu.vizoli.examples.robotlegs2.teamtasks.event
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * clone
+		 * @inheritDoc
 		 */
-		override public function clone():Event
+		override public function clone( ):Event
 		{
-			return new TeamEvent(type, bubbles, cancelable);
+			return new TeamEvent( type, bubbles, cancelable );
 		}
 		
 	}
