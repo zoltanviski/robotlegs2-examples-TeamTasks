@@ -33,7 +33,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * @private
+		 * Returns the members
 		 */
 		public function get members():Vector.<MemberVO> 
 		{
@@ -41,9 +41,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		}
 		
 		/**
-		 * Returns the members
-		 * 
-		 * @param	 value
+		 * @private
 		 */
 		public function set members( value:Vector.<MemberVO> ):void 
 		{

@@ -20,7 +20,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * @private
+		 * Returns the tasks
 		 */
 		public function get tasks():Vector.<TaskVO> 
 		{
@@ -28,9 +28,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model
 		}
 		
 		/**
-		 * Returns the tasks
-		 * 
-		 * @param	 value
+		 * @private
 		 */
 		public function set tasks( value:Vector.<TaskVO> ):void 
 		{

@@ -35,7 +35,7 @@ package hu.vizoli.examples.robotlegs2.teamtasks.model.events
 		//--------------------------------------------------------------------------
 		
 		/**
-		 * @inheritDOc
+		 * @inheritDoc
 		 */
 		override public function clone( ):Event
 		{

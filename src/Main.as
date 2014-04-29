@@ -4,7 +4,10 @@ package
 	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import hu.vizoli.examples.robotlegs2.teamtasks.base.BaseView;
-	import hu.vizoli.examples.robotlegs2.teamtasks.config.FlashTeamTasksConfig;
+	import hu.vizoli.examples.robotlegs2.teamtasks.config.CommandConfig;
+	import hu.vizoli.examples.robotlegs2.teamtasks.config.MediatorConfig;
+	import hu.vizoli.examples.robotlegs2.teamtasks.config.ModelConfig;
+	import hu.vizoli.examples.robotlegs2.teamtasks.config.ServiceConfig;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.AppletBackgroundView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.LogoView;
 	import hu.vizoli.examples.robotlegs2.teamtasks.view.NewTaskView;
@@ -38,9 +41,7 @@ package
 		 */
 		public function Main():void 
 		{
-			this._context = new Context()
-				.install( MVCSBundle )
-				.configure( FlashTeamTasksConfig, new ContextView( this ) );
+			this.setupContext();
 				
 			if ( this.stage ) this.init();
 			else this.addEventListener( Event.ADDED_TO_STAGE, this.init );
@@ -76,6 +77,27 @@ package
 			this._taskListView.x				= ( stage.stageWidth / 2 ) - 352;
 			this._taskListView.y				= 120;
 			this.addChild( this._taskListView );
+		}
+		
+		//--------------------------------------------------------------------------
+		//
+		//  Private methods
+		//
+		//--------------------------------------------------------------------------
+		
+		/**
+		 * Setup the context
+		 */
+		private function setupContext():void
+		{
+			this._context = new Context()
+				.install( 	MVCSBundle )
+				.configure( ModelConfig,
+							ServiceConfig,
+							CommandConfig,
+							MediatorConfig,
+							new ContextView( this ) 
+						   );
 		}
 		
 		//--------------------------------------------------------------------------
